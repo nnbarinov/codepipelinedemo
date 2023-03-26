@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JavaScript Example</title>
+	<style>
+		body {
+			background-color: #f5f5f5;
+			font-family: Arial, sans-serif;
+			padding: 20px;
+		}
+		h1 {
+			color: #333;
+			text-align: center;
+			margin-top: 0;
+		}
+		p {
+			color: #666;
+			margin-bottom: 20px;
+		}
+		button {
+			background-color: #008CBA;
+			border: none;
+			color: white;
+			padding: 10px 20px;
+			text-align: center;
+			text-decoration: none;
+			display: inline-block;
+			font-size: 16px;
+			border-radius: 5px;
+			cursor: pointer;
+		}
+		button:hover {
+			background-color: #0077b3;
+		}
+	</style>
+	<script>
+		// JavaScript code goes here
+		function sayHello() {
+			var now = new Date();
+			var hours = now.getHours();
+			var minutes = now.getMinutes();
+			var seconds = now.getSeconds();
+			var timeString = hours + ":" + minutes + ":" + seconds;
+			alert("The current time is " + timeString);
+		}
+	</script>
+</head>
+<body>
+	<h1>JavaScript Example</h1>
+	<p>Click the button below to see the current time.</p>
+	<button onclick="sayHello()">Click me</button>
+</body>
+</html>
